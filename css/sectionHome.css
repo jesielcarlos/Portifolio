@@ -1,0 +1,71 @@
+.home {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: url('../images/pexels-felix-mittermeier-956999.jpg') no-repeat;
+    background-position: center;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+    animation: zoom 35s;
+    animation-iteration-count: infinite;
+}  
+@keyframes zoom {
+    0% {
+      background-size: 150%;
+      background-position: center;
+    }
+    100% {
+        background-size: 100%;
+
+    }
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+
+}
+
+.home .home-content .text-3 span {
+    color: rgb(20, 50, 220);
+    font-weight: 500;
+}
+@media (max-width: 1300px) {
+    .home .max-width{
+        margin-left: 0px;
+    }
+    .home {
+        animation: none;
+    }  
+
+}
+
+@media (max-width: 950px) {
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+}
+@media (max-width: 522px) {
+
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 27px;
+    }
+}
